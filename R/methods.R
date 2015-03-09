@@ -66,8 +66,6 @@ print.lints <- function(x, ...) {
                              capture.output(invisible(lapply(x, markdown, info, ...)))
                             )
                      )
-
-        github_comment(lint_output, info, ...)
       }
     }
     lapply(x, print, ...)
